@@ -1,0 +1,63 @@
+﻿#create vextors for the 25 fruits
+fruits <- c("fruit_1","fruit_2","fruit_3","fruit_4","fruit_5", "fruit_6", "fruit_7", "fruit_8", "fruit_9","fruit_10","fruit_11","fruit_12","fruit_13","fruit_14","fruit_15","fruit_16","fruit_17","fruit_18","fruit_19","fruit_20","fruit_21","fruit_22","fruit_23","fruit_24","fruit_25")
+date <- seq(as.Date("25/05/2020", "08/06/2020", format= "%d/%m/%y"), by= "days", length= length(F))
+date <- c("25/05/2020", "08/06/2020")
+#peach, Matityahu farm, tree 1, fruit diameter evolution along the season
+matplot((peach_for_matplot_matityahu_tree_1), type= "b", pch= 15:18, col=c(1:26), ylab = "n")
+legend("topleft", inset=0.0000001, legend=fruits, col=c(2:26), pch= 15:18, horiz = F, cex = 0.45, pt.cex = 1, ncol = 3)
+title(main ="Sweet september fruit diameter evolution tree 1, 2020, Matityahu farm", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+#peach, Matityahu farm, tree 2, fruit diameter evolution along the season
+matplot((peach_for_matplot_matityahu_tree_2), type= "b", pch= 15:18, col=c(1:26), ylab = "n")
+legend("topleft", inset=0.0000001, legend=fruits, col=c(2:26), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 3)
+title(main ="Sweet september fruit diameter evolution tree 2, 2020, Matityahu farm", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+#peach, Matityahu farm, tree 3, fruit diameter evolution along the season
+matplot((peach_for_matplot_matityahu_tree_3), type= "b", pch= 15:18, col=c(1:26), ylab = "n")
+legend("topleft", inset=0.0000001, legend=fruits, col=c(2:26), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 3)
+title(main ="Sweet september fruit diameter evolution tree 3, 2020, Matityahu farm", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+#peach, Matityahu farm, tree 4, fruit diameter evolution along the season
+matplot((peach_for_matplot_matityahu_tree_4), type= "b", pch= 15:18, col=c(1:26), ylab = "n")
+legend("topleft", inset=0.0000001, legend=fruits, col=c(2:26), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 3)
+title(main ="Sweet september fruit diameter evolution tree 4, 2020, Matityahu farm", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+#peach, Matityahu farm, tree 5, fruit diameter evolution along the season
+matplot((peach_for_matplot_matityahu_tree_5), type= "b", pch= 15:18, col=c(1:26), ylab = "n")
+legend("topleft", inset=0.0000001, legend=fruits, col=c(2:26), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 3)
+title(main ="Sweet september fruit diameter evolution tree 5, 2020, Matityahu farm", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+-------------------------------------------------------------------------------------------
+# for or mandarin 2020-2021
+
+#or, Ein_Vered, tree 1, fruit diameter evolution from date of reduced growth to picking
+matplot((or_tree_1), type= "b", pch= 15:18, col=c(2:17), ylab = "n")
+legend("topright", inset=0.0000001, legend=fruits, col=c(2:17), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 4)
+title(main ="or mandarin fruit diameter evolution at plateau stage tree 1, 2021, Ein_Vered", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+
+#or, Ein_Vered, tree 2, fruit diameter evolution from date of reduced growth to picking
+matplot((or_tree_2), type= "b", pch= 15:18, col=c(2:24), ylab = "n")
+legend("topright", inset=0.0000001, legend=fruits, col=c(2:24), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 4)
+title(main ="or mandarin fruit diameter evolution at plateau stage tree 2, 2021, Ein_Vered", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+
+#or, Ein_Vered, tree 3, fruit diameter evolution from date of reduced growth to picking
+matplot((or_tree_3), type= "b", pch= 15:18, col=c(2:21), ylab = "n")
+legend("topright", inset=0.0000001, legend=fruits, col=c(2:21), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 4)
+title(main ="or mandarin fruit diameter evolution at plateau stage tree 3, 2021, Ein_Vered", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+
+#or, Ein_Vered, tree 4, fruit diameter evolution from date of reduced growth to picking
+matplot((or_tree_4), type= "b", pch= 15:18, col=c(2:16), ylab = "n")
+legend("topright", inset=0.0000001, legend=fruits, col=c(2:16), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 4)
+title(main ="or mandarin fruit diameter evolution at plateau stage tree 4, 2021, Ein_Vered", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+
+#or, Ein_Vered, tree 5, fruit diameter evolution from date of reduced growth to picking
+matplot((or_tree_5), type= "b", pch= 15:18, col=c(2:18), ylab = "n")
+legend("topright", inset=0.0000001, legend=fruits, col=c(2:18), pch= 15:18, horiz = F, cex = 0.55, pt.cex = 1, ncol = 4)
+title(main ="or mandarin fruit diameter evolution at plateau stage tree 5, 2021, Ein_Vered", xlab = "Date(weeks)", ylab = "Diameter(mm)")
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+#box plot for the final diameter at harvest 
+boxplot(BOX_PLOT_FOR_FINAL_DIAMETER)
+title(main = "final diameter at picking 13/09/2020", xlab = "Tree N.", ylab = "mm")
+#box plot for the slope (fruit growth rate) ~ 2 months before harvest
+boxplot(slope_between_the_different_trees)
+title(main = "slope (fruit growth curve) between the different trees ~ 2 months before harvest", xlab = "Tree N.")
